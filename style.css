@@ -1,0 +1,71 @@
+/* GRID */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* USER */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user img {
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.user h4 {
+  font-size: 14px;
+}
+
+.user p {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* TEXT */
+.card h2 {
+  font-size: 18px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+/* COLORS */
+.purple {
+  background: hsl(263, 55%, 52%);
+  color: white;
+  grid-column: span 2;
+}
+
+.dark {
+  background: hsl(217, 19%, 35%);
+  color: white;
+}
+
+.light {
+  background: white;
+  color: hsl(219, 29%, 14%);
+}
+
+.big {
+  grid-column: span 2;
+}
